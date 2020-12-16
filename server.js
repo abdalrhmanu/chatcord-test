@@ -15,10 +15,10 @@ const app = express();
 const server = http.createServer(app)
 const io = socketio(server);
 
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/')));
 
 const Messanger = 'Messanger'; 
 
